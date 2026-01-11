@@ -1,4 +1,13 @@
 package io.zipcoder.tc_spring_poll_application;
 
-public class QuickPollApplicationTest {
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class QuickPollApplicationTest {
+
+    @Test
+    void contextLoads() {
+    }
+
 }

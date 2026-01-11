@@ -1,0 +1,29 @@
+package io.zipcoder.tc_spring_poll_application.dtos;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class VoteResult {
+    private int totalVotes;
+    private Collection<OptionCount> results = new ArrayList<>();
+    
+    public int getTotalVotes() {
+        return totalVotes;
+    }
+    
+    public void setTotalVotes(int totalVotes) {
+        this.totalVotes = totalVotes;
+    }
+    
+    public Collection<OptionCount> getResults() {
+        return results;
+    }
+    
+    public void setResults(Collection<OptionCount> results) {
+        this.results = results;
+    }
+    
+    public void addOptionCount(OptionCount optionCount) {
+        this.results.add(optionCount);
+    }
+}
